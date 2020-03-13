@@ -1,0 +1,63 @@
+.body {
+    width: 100%;
+}
+
+.head {
+    background-color: antiquewhite;
+    color: grey;
+    width: 80%;
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.instructions {
+    background-color: antiquewhite;
+    width: 80%;
+    padding: 10px;
+}
+
+.instructions p {
+    padding: 10px;
+    
+}
+
+.scoreSection {
+    display: flex;
+    width: 80%;
+    padding: 10px;
+}
+
+#randomNumber {
+    background-color: lightgreen;
+    flex: 3;
+    
+    height: 50px;
+}
+
+#scoreSheet {
+    background-color: purple;
+    flex: 1;
+ 
+    height: 50px;
+}
+
+.crystals {
+    display: inline-block;
+}
+
+#totalScore {
+    background-color: teal;
+    height: 40px;
+    width: 80%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+#scoreSoFar {
+    background-color: teal;
+    width: 80%;
+    height: 70px;
+    padding: 10px;
+}
