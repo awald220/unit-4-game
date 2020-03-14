@@ -46,6 +46,11 @@
     display: inline-block;
 }
 
+button img {
+    width: 60px;
+    height: 60px;
+}
+
 #totalScore {
     background-color: teal;
     height: 40px;
