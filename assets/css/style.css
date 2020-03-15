@@ -42,11 +42,11 @@
     height: 50px;
 }
 
-.crystals {
+.back {
     display: inline-block;
 }
 
-button img {
+img {
     width: 60px;
     height: 60px;
 }
@@ -60,9 +60,10 @@ button img {
     padding: 10px;
 }
 
-#scoreSoFar {
+#curScore {
     background-color: teal;
     width: 80%;
     height: 70px;
     padding: 10px;
+    text-align: center;
 }
