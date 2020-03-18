@@ -1,3 +1,5 @@
+
+
 var winCounter = 0;
 var lossCounter = 0;
 var targetNumber = Math.floor(Math.random() * 101) + 19;
@@ -12,9 +14,11 @@ var blue = Math.floor(Math.random() * 11) + 1;
 $("#winCounter").html(winCounter);
 $("#lossCounter").html(lossCounter);
 
+
 var counter = 0;
 $("#curScore").text(counter);
 
+// This function will reset the game when the player wins/looses. It sets it to the original set.
 function restartGame() {
     targetNumber = Math.floor(Math.random() * 101) +19;
     $("#targetNumber").text(targetNumber);
@@ -26,25 +30,25 @@ function restartGame() {
     $("#curScore").text(counter);
 }
 
+// If the player wins the code will run this function. It adds a point to win, and activtes the restartGame function.
 function win() {
-    alert("You Win!");
     winCounter ++;
-    $("#winCounter").text(winCounter);
+    $("#winCounter").html(winCounter);
     restartGame();
 }
 
+// If the player looses the code will run this functon. It adds a point to loss, and activates the restartGame function.
 function loose() {
-    alert("You Losse!")
     lossCounter ++;
-    $("#lossCounter").text(lossCounter);
+    $("#lossCounter").html(lossCounter);
     restartGame();
 }
 
-
+// Sets a random value to the pink crystal and sends the value the scoreSoFar div.
 $("#pink").on ("click", function(){
     counter = counter + pink;
 
-    $("curScore").text(counter);
+    $("#curScore").html(counter);
 
         if (counter == targetNumber){
             win();
@@ -52,12 +56,15 @@ $("#pink").on ("click", function(){
         else if (counter > targetNumber){
             loose();
         }
+
+        console.log(counter + pink);
 });
 
+// Sets a random value to the red crystal and sends the value the scoreSoFar div.
 $("#red").on ("click", function(){
     counter = counter + red;
 
-    $("curScore").text(counter);
+    $("#curScore").html(counter);
 
         if (counter == targetNumber){
             win();
@@ -65,12 +72,15 @@ $("#red").on ("click", function(){
         else if (counter > targetNumber){
             loose();
         }
+    
+        console.log(counter + red);
 });
 
+// Sets a random value to the grey crystal and sends the value the scoreSoFar div.
 $("#grey").on ("click", function(){
     counter = counter + grey;
 
-    $("curScore").text(counter);
+    $("#curScore").html(counter);
 
         if (counter == targetNumber){
             win();
@@ -78,12 +88,14 @@ $("#grey").on ("click", function(){
         else if (counter > targetNumber){
             loose();
         }
+        console.log(counter + grey);
 });
 
+// Sets a random value to the blue crystal and sends the value the scoreSoFar div.
 $("#blue").on ("click", function(){
     counter = counter + blue;
 
-    $("curScore").text(counter);
+    $("#curScore").html(counter);
 
         if (counter == targetNumber){
             win();
@@ -91,8 +103,6 @@ $("#blue").on ("click", function(){
         else if (counter > targetNumber){
             loose();
         }
+        console.log(counter + blue);
 });
 
-console.log(blue, red, pink, grey);
-console.log(targetNumber);
-console.log(counter);

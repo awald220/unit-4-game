@@ -3,18 +3,22 @@
 }
 
 .head {
-    background-color: antiquewhite;
-    color: grey;
+    background-color: orange;
+    color: white;
+    font-size: 35px;
     width: 80%;
-    margin-bottom: 20px;
+    height: 50px;
+    margin: 20px;
     padding: 10px;
     text-align: center;
 }
 
 .instructions {
-    background-color: antiquewhite;
+    background-color: wheat;
+    color: green;
     width: 80%;
     padding: 10px;
+    margin-left: 20px;
 }
 
 .instructions p {
@@ -28,18 +32,31 @@
     padding: 10px;
 }
 
-#randomNumber {
-    background-color: lightgreen;
-    flex: 3;
-    
-    height: 50px;
+#targetNumber {
+    background-color: aquamarine;
+    flex: 1.5;
+    font-size: 25px;
+    color: brown;
+    height: 75px;
+    margin: 10px;
 }
 
 #scoreSheet {
-    background-color: purple;
-    flex: 1;
- 
-    height: 50px;
+    background-color: aqua;
+    flex: .75;
+    margin: 10px;
+    height: 75px;
+    width: 30px;
+    text-align: center;
+    
+}
+
+#scoreSheet p {
+    padding: 10px;
+}
+
+#extra {
+    flex: 2;
 }
 
 .back {
@@ -49,21 +66,31 @@
 img {
     width: 60px;
     height: 60px;
+   
+}
+
+.back {
+    margin: 10px;
+    margin-left: 20px;
 }
 
 #totalScore {
     background-color: teal;
-    height: 40px;
+    height: 20px;
     width: 80%;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin: 20px;
     padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    color: white;
 }
 
 #curScore {
     background-color: teal;
     width: 80%;
     height: 70px;
+    margin-left: 20px;
     padding: 10px;
-    text-align: center;
+    color: white;
+    font-size: 25px;
 }
